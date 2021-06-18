@@ -1,0 +1,120 @@
+.hero-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0 , 0, 0.2);
+    object-fit:contain;
+}
+
+.hero-container h1 {
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 70vh;
+}
+
+.hero-container p{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    position: absolute;
+    top: 85vh;
+}
+
+@media screen and (max-width:1180px){
+    .hero-container h1 {
+        font-size: 70px;
+    }
+    
+    .hero-container p{
+        font-size: 40px;
+        top: 83vh;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .hero-container h1 {
+        font-size: 60px;
+    }
+    
+    .hero-container p{
+        font-size: 35px;
+        top: 80vh;
+    }
+}
+
+@media screen and (max-width:910px){
+    .hero-container h1 {
+        font-size: 50px;
+    }
+    
+    .hero-container p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .hero-container h1 {
+        text-align: center;
+        max-width: 6em;
+        word-break: normal;
+        font-size: 60px;
+        top: 30vh;
+    }
+    
+    .hero-container p{
+        font-size: 30px;
+        top: 60vh;
+    }
+}
+
+@media screen and (max-width:560px){
+    .hero-container h1 {
+        text-align: center;
+        max-width: 6em;
+        word-break: normal;
+        font-size: 50px;
+    }
+    
+    .hero-container p{
+        font-size: 25px;
+        top: 55vh;
+    }
+}
+
+@media screen and (max-width:560px){
+    .hero-container h1 {
+        text-align: center;
+        max-width: 6em;
+        word-break: normal;
+        font-size: 50px;
+    }
+    
+    .hero-container p{
+        font-size: 25px;
+        top: 55vh;
+    }
+}
+
+@media screen and (max-width:420px){
+    .hero-container p{
+        top: 65vh;
+    }
+}
+
+@media screen and (max-height: 570px){
+    .hero-container h1 {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,163 @@
+.footer {
+    height: 24vh;
+    position: relative;
+    bottom:0;
+}
+
+.footer-container{
+    position: relative;
+    top: -8vh;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(22, 18, 18) 100%);
+    height: 32vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    padding: 5vh 0vh;
+}
+
+.social-media-container{
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2vh;
+}
+
+.fa-facebook-square, .fa-instagram-square, .fa-linkedin{
+    color: white;
+    font-size: 2.2em;
+    opacity: 95%;
+}
+
+.fa-facebook-square:hover, .fa-linkedin:hover, .fa-instagram-square:hover{
+    color: black;
+    background: white;
+    padding: 0.1rem;
+    font-size: 2em;
+    cursor: pointer; 
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.important-docs-container{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    padding-top: 1.5vh;
+}
+
+.fa-user-secret, .fa-tenge{
+    padding-right: 1rem;
+}
+
+.fa-circle{
+    color: white;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}
+
+hr{
+    margin: 0vh 2vh;
+    color: white;
+    width: 100%;
+}
+
+.address-phone, .address-email{
+    width: 20rem;
+    text-align: center;
+}
+
+.address-container{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 1.5vh;
+}
+
+.address-container span{
+    padding-left: 0.5rem;
+    color: white;
+}
+
+.rights-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5vh;
+    cursor: default;
+}
+
+.fa-phone-square-alt, .fa-envelope-square{
+    color: white;
+}
+
+.rights-container span{
+    padding: 0em 0.5rem;
+    color: white;
+}
+
+.fa-copyright{
+    color: white;
+}
+
+
+@media screen and (max-width:1380px){
+    .address-container{
+        width: initial;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-height:900px){
+    .footer {
+        height: 32vh;
+    }
+
+    .footer-container{
+        height: 40vh
+    }
+}
+
+@media screen and (max-width:700px){
+    .important-docs-container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:470px){
+    .important-docs-container{
+        width: 100%;
+    }
+
+    .social-media-container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:380px){
+    a{
+        font-size: 0.8em;
+    }
+
+    .address-container span{
+        font-size: 0.8em;
+    }
+
+    .fa-circle{
+        font-size: 0.5rem;
+    }
+
+    .rights-container{
+        font-size: 0.8em;
+    }
+}
